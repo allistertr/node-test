@@ -1,0 +1,25 @@
+{
+  "name": "kbase-test",
+  "version": "1.0.0",
+  "description": "Teste de Consumo de API",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allistertr/kbase-test.git"
+  },
+  "author": "Allister Terhorst Ramos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/allistertr/kbase-test/issues"
+  },
+  "homepage": "https://github.com/allistertr/kbase-test#readme",
+  "dependencies": {
+    "consign": "0.1.6",
+    "cors": "2.8.4",
+    "express": "4.16.3"
+  }
+}
