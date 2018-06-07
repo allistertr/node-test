@@ -5,8 +5,9 @@ class Person {
     this.address = person.address || '';
   }
 
-  setAddress(address = '') {
-    this.address = address;
+  fillAddress(addressObject = {}) {
+    this.address = addressObject.address || '';
+    return this;
   }
 
   toJSON() {

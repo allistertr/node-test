@@ -6,6 +6,7 @@ let homeDirectory = path.join(__dirname, '..', 'app');
 
 let app = express();
 
+app.set('peopleUrl','https://kbase-core-test.herokuapp.com');
 app.use(cors());
 
 consign({ cwd: homeDirectory })

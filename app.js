@@ -1,7 +1,5 @@
-let app = require('./config/express');
-let port = process.env.PORT || 3000;
-
-app.set('people-url','https://kbase-core-test.herokuapp.com');
+const app = require('./config/express');
+const port = process.env.PORT || 3000;
 
 app.get('/', function (req, res) {
   console.log("Rota raiz acessada");
