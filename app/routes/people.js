@@ -3,4 +3,7 @@ module.exports = function (app) {
 
   app.route('/people')
     .get(api.getPeopleWithAddress);
+
+  app.route('/people/:amountPerStep/:numberOfAttempts')
+    .get(api.getPeopleWithAddress);
 };
