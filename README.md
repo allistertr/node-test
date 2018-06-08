@@ -12,11 +12,11 @@ Porta de acesso: `3000`
 ## Rotas de Acesso
 Foram disponibilizadas duas rotas de acesso:
 
-A rota: `/people/:amountPerStep/:numberOfAttempts`
+A rota (método GET): `/people/:amountPerStep/:numberOfAttempts`
 
 Onde `amountPerStep` representa a quantidade de conexões simultâneas que o servidor criará ao buscar as informações complementares e o `numberOfAttempts` representa a quantidade de tentativas máxima que o servidor poderá realizar na busca de cada informação complementar.
 Exemplo:`http://localhost:3000/people/3000/20`
 
-A rota: `/people`, apresenta o mesmo comportamento do outra rota, mas ao utilizá-la, serão atribuídos por padrão os valores `amountPerStep=1000` e `numberOfAttempts=20`
+A rota (método GET): `/people`, apresenta o mesmo comportamento do outra rota, mas ao utilizá-la, serão atribuídos por padrão os valores `amountPerStep=1000` e `numberOfAttempts=20`
 
 **Observação**: Elevar o valor do atributo `amountPerStep` poderá diminuir o tempo de resposta das consultas, mas aumentará o consumo de harware e poderá causar uma sobrecarregar o servidor externo.
