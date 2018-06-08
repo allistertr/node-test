@@ -15,7 +15,8 @@ Foram disponibilizadas duas rotas de acesso:
 A rota: `/people/:amountPerStep/:numberOfAttempts`
 
 Onde `amountPerStep` representa a quantidade de conexões simultâneas que o servidor criará ao buscar as informações complementares e o `numberOfAttempts` representa a quantidade de tentativas máxima que o servidor poderá realizar na busca de cada informação complementar.
+Exemplo:`http://localhost:3000/people/3000/20`
 
 A rota: `/people`, apresenta o mesmo comportamento do outra rota, mas ao utilizá-la, serão atribuídos por padrão os valores `amountPerStep=1000` e `numberOfAttempts=20`
 
-**Observação**: Os atributos `amountPerStep` e `numberOfAttempts` foram criados com o intuito de gerenciar o quantidade máxima de conexão simultâneas diminuindo o tempo de processamento e evitando sobrecarga de hardware tanto da máquina quanto do servidor externo, contudo os valores definidos como padrões podem não ser os ideais em todos os senários.
+**Observação**: Elevar o valor do atributo `amountPerStep` poderá diminuir o tempo de resposta das consultas, mas aumentará o consumo de harware e poderá causar uma sobrecarregar o servidor externo.
